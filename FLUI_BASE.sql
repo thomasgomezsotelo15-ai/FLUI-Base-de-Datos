@@ -267,3 +267,46 @@ u.Contraseña_Usuario,n.Direccion,n
 FROM Usuario u 
 INNER JOIN Negocio n ON u.Id_Usuario = n.Id_Usuario
 WHERE Direccion BETWEEN 'Cra 7A' AND 'Cra 7e';
+
+
+INSERT INTO Venta_del_producto (Id_Venta, Id_Producto) VALUES
+(1, 1001),
+(2, 1002),
+(3, 1003),
+(4, 1004),
+(5, 1005),
+(6, 1006),
+(7, 1007),
+(8, 1008),
+(9, 1009),
+(10, 1010);
+
+
+INSERT INTO Producto_con_cliente (Id_Producto, Id_Cliente) VALUES
+(1001, 10),
+(1002, 11),
+(1003, 12),
+(1004, 13),
+(1005, 14),
+(1006, 15),
+(1007, 16),
+(1008, 17),
+(1009, 18),
+(1010, 19);
+
+
+INSERT INTO Surtir_el_producto (Id_Producto, Id_Proovedor) VALUES
+(1001, 1),
+(1002, 2),
+(1003, 3),
+(1004, 4),
+(1005, 5),
+(1006, 6),
+(1007, 7),
+(1008, 8),
+(1009, 9),
+(1010, 10);
+
+
+
+
