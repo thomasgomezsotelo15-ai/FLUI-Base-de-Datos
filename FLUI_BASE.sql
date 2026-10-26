@@ -243,3 +243,27 @@ INSERT INTO Gasto VALUES
 (8, 108, 'Publicidad de camisetas', 70000, '2025-10-08 15:00:00'),
 (9, 109, 'Empaques para flores', 30000, '2025-10-09 16:00:00'),
 (10, 110, 'Transporte de juguetes', 40000, '2025-10-10 17:00:00');
+
+
+SELECT *
+FROM Gasto WHERE valor BETWEEN 40000 AND 80000
+
+
+SELECT 
+p.Stock_Minimo,i.Ultima_Actualizacion
+FROM Producto p
+INNER JOIN Inventario i ON p.Id_Producto = i.Id_Producto;
+
+SELECT
+c.Fecha_Compra,
+f.Fecha,
+f,Total
+FROM Compra c
+INNER JOIN Factura f ON c.Id_Compra = f.Id_Compra
+WHERE Fecha BETWEEN '2025-07-15' AND '2025-10-10';
+
+SELECT 
+u.Contraseña_Usuario,n.Direccion,n
+FROM Usuario u 
+INNER JOIN Negocio n ON u.Id_Usuario = n.Id_Usuario
+WHERE Direccion BETWEEN 'Cra 7A' AND 'Cra 7e';
